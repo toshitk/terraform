@@ -33,7 +33,7 @@ resource "google_bigquery_data_transfer_config" "s3_data_transfer" {
   destination_dataset_id = "data_transfer_test"
   display_name           = "tf_from_s3"
   data_source_id         = "amazon_s3"
-  schedule               = "every 24 hours"
+  schedule               = "every day 00:00"
   location               = "asia-northeast1"
 
   params = {
